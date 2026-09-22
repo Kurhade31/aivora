@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" fill="none">
+  <defs>
+    <linearGradient id="layer-grad-1" x1="0" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="layer-border" x1="0" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Six Knowledge Layers -->
+  <!-- Layer 1: FOUNDATION -->
+  <g transform="translate(30, 20)">
+    <rect width="540" height="46" rx="8" fill="url(#layer-grad-1)" stroke="#06B6D4" stroke-width="1.5"/>
+    <rect x="14" y="11" width="24" height="24" rx="6" fill="#0E2A3A"/>
+    <text x="21" y="27" fill="#06B6D4" font-family="monospace" font-size="12" font-weight="700">01</text>
+    <text x="50" y="28" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="700">FOUNDATION</text>
+    <text x="170" y="28" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">What is this technology actually? Core definition and mental model.</text>
+  </g>
+
+  <!-- Layer 2: MECHANISM -->
+  <g transform="translate(30, 74)">
+    <rect width="540" height="46" rx="8" fill="url(#layer-grad-1)" stroke="#38BDF8" stroke-width="1.5"/>
+    <rect x="14" y="11" width="24" height="24" rx="6" fill="#0E2A3A"/>
+    <text x="21" y="27" fill="#38BDF8" font-family="monospace" font-size="12" font-weight="700">02</text>
+    <text x="50" y="28" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="700">MECHANISM</text>
+    <text x="170" y="28" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">How does it work internally? Mathematical &amp; algorithmic logic.</text>
+  </g>
+
+  <!-- Layer 3: ECOSYSTEM -->
+  <g transform="translate(30, 128)">
+    <rect width="540" height="46" rx="8" fill="url(#layer-grad-1)" stroke="#3B82F6" stroke-width="1.5"/>
+    <rect x="14" y="11" width="24" height="24" rx="6" fill="#0E2A3A"/>
+    <text x="21" y="27" fill="#3B82F6" font-family="monospace" font-size="12" font-weight="700">03</text>
+    <text x="50" y="28" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="700">ECOSYSTEM</text>
+    <text x="170" y="28" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">What models, frameworks, and tools surround and power it?</text>
+  </g>
+
+  <!-- Layer 4: APPLICATION -->
+  <g transform="translate(30, 182)">
+    <rect width="540" height="46" rx="8" fill="url(#layer-grad-1)" stroke="#10B981" stroke-width="1.5"/>
+    <rect x="14" y="11" width="24" height="24" rx="6" fill="#0E2A3A"/>
+    <text x="21" y="27" fill="#10B981" font-family="monospace" font-size="12" font-weight="700">04</text>
+    <text x="50" y="28" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="700">APPLICATION</text>
+    <text x="170" y="28" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">What real-world software, agents, and systems can you build?</text>
+  </g>
+
+  <!-- Layer 5: TRADE-OFFS -->
+  <g transform="translate(30, 236)">
+    <rect width="540" height="46" rx="8" fill="url(#layer-grad-1)" stroke="#F59E0B" stroke-width="1.5"/>
+    <rect x="14" y="11" width="24" height="24" rx="6" fill="#0E2A3A"/>
+    <text x="21" y="27" fill="#F59E0B" font-family="monospace" font-size="12" font-weight="700">05</text>
+    <text x="50" y="28" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="700">TRADE-OFFS</text>
+    <text x="170" y="28" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Cost, latency, privacy, accuracy limitations, and when NOT to use.</text>
+  </g>
+
+  <!-- Layer 6: PRACTICE -->
+  <g transform="translate(30, 290)">
+    <rect width="540" height="46" rx="8" fill="url(#layer-grad-1)" stroke="#A855F7" stroke-width="1.5"/>
+    <rect x="14" y="11" width="24" height="24" rx="6" fill="#0E2A3A"/>
+    <text x="21" y="27" fill="#A855F7" font-family="monospace" font-size="12" font-weight="700">06</text>
+    <text x="50" y="28" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="700">PRACTICE</text>
+    <text x="170" y="28" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Executable patterns, code implementations, and hands-on projects.</text>
+  </g>
+</svg>

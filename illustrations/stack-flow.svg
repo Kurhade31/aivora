@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" fill="none">
+  <defs>
+    <linearGradient id="flow-node" x1="0" y1="0" x2="0" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#090D16" />
+    </linearGradient>
+    <linearGradient id="flow-line" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="50%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+  </defs>
+
+  <!-- Connective Data Spine -->
+  <path d="M 50 120 L 750 120" stroke="url(#flow-line)" stroke-width="3" stroke-dasharray="6 6" />
+
+  <!-- Node 1: Hardware -->
+  <g transform="translate(15, 75)">
+    <rect width="85" height="90" rx="10" fill="url(#flow-node)" stroke="#1E293B" stroke-width="2"/>
+    <rect x="25" y="16" width="35" height="24" rx="4" fill="#0E2A3A" stroke="#06B6D4"/>
+    <text x="42" y="32" fill="#06B6D4" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle">GPU</text>
+    <text x="42" y="62" fill="#F8FAFC" font-family="system-ui" font-size="11" font-weight="700" text-anchor="middle">Hardware</text>
+    <text x="42" y="76" fill="#64748B" font-family="system-ui" font-size="9" text-anchor="middle">TPU / H100</text>
+  </g>
+
+  <!-- Node 2: Inference -->
+  <g transform="translate(125, 75)">
+    <rect width="85" height="90" rx="10" fill="url(#flow-node)" stroke="#1E293B" stroke-width="2"/>
+    <rect x="25" y="16" width="35" height="24" rx="4" fill="#0E2A3A" stroke="#38BDF8"/>
+    <text x="42" y="32" fill="#38BDF8" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle">RT</text>
+    <text x="42" y="62" fill="#F8FAFC" font-family="system-ui" font-size="11" font-weight="700" text-anchor="middle">Inference</text>
+    <text x="42" y="76" fill="#64748B" font-family="system-ui" font-size="9" text-anchor="middle">vLLM / Ollama</text>
+  </g>
+
+  <!-- Node 3: Models -->
+  <g transform="translate(235, 75)">
+    <rect width="85" height="90" rx="10" fill="url(#flow-node)" stroke="#06B6D4" stroke-width="2"/>
+    <rect x="25" y="16" width="35" height="24" rx="4" fill="#0E2A3A" stroke="#06B6D4"/>
+    <text x="42" y="32" fill="#06B6D4" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle">LLM</text>
+    <text x="42" y="62" fill="#F8FAFC" font-family="system-ui" font-size="11" font-weight="700" text-anchor="middle">Models</text>
+    <text x="42" y="76" fill="#64748B" font-family="system-ui" font-size="9" text-anchor="middle">Weights / MoE</text>
+  </g>
+
+  <!-- Node 4: APIs -->
+  <g transform="translate(345, 75)">
+    <rect width="85" height="90" rx="10" fill="url(#flow-node)" stroke="#1E293B" stroke-width="2"/>
+    <rect x="25" y="16" width="35" height="24" rx="4" fill="#0E2A3A" stroke="#3B82F6"/>
+    <text x="42" y="32" fill="#3B82F6" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle">REST</text>
+    <text x="42" y="62" fill="#F8FAFC" font-family="system-ui" font-size="11" font-weight="700" text-anchor="middle">APIs</text>
+    <text x="42" y="76" fill="#64748B" font-family="system-ui" font-size="9" text-anchor="middle">Gateways</text>
+  </g>
+
+  <!-- Node 5: Frameworks -->
+  <g transform="translate(455, 75)">
+    <rect width="85" height="90" rx="10" fill="url(#flow-node)" stroke="#1E293B" stroke-width="2"/>
+    <rect x="25" y="16" width="35" height="24" rx="4" fill="#0E2A3A" stroke="#6366F1"/>
+    <text x="42" y="32" fill="#6366F1" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle">FW</text>
+    <text x="42" y="62" fill="#F8FAFC" font-family="system-ui" font-size="11" font-weight="700" text-anchor="middle">Frameworks</text>
+    <text x="42" y="76" fill="#64748B" font-family="system-ui" font-size="9" text-anchor="middle">RAG / LangGraph</text>
+  </g>
+
+  <!-- Node 6: Agents -->
+  <g transform="translate(565, 75)">
+    <rect width="85" height="90" rx="10" fill="url(#flow-node)" stroke="#1E293B" stroke-width="2"/>
+    <rect x="25" y="16" width="35" height="24" rx="4" fill="#0E2A3A" stroke="#10B981"/>
+    <text x="42" y="32" fill="#10B981" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle">AGT</text>
+    <text x="42" y="62" fill="#F8FAFC" font-family="system-ui" font-size="11" font-weight="700" text-anchor="middle">Agents</text>
+    <text x="42" y="76" fill="#64748B" font-family="system-ui" font-size="9" text-anchor="middle">Tools / Memory</text>
+  </g>
+
+  <!-- Node 7: Applications -->
+  <g transform="translate(675, 75)">
+    <rect width="95" height="90" rx="10" fill="url(#flow-node)" stroke="#10B981" stroke-width="2"/>
+    <rect x="30" y="16" width="35" height="24" rx="4" fill="#0E2A3A" stroke="#10B981"/>
+    <text x="47" y="32" fill="#10B981" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle">APP</text>
+    <text x="47" y="62" fill="#F8FAFC" font-family="system-ui" font-size="11" font-weight="700" text-anchor="middle">Applications</text>
+    <text x="47" y="76" fill="#64748B" font-family="system-ui" font-size="9" text-anchor="middle">End User UI</text>
+  </g>
+</svg>
