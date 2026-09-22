@@ -1,0 +1,43 @@
+name: Content Correction or Addition
+description: Report an inaccurate technical claim or suggest a new concept, model, or tool.
+labels: ["content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping keep Aivora accurate and source-verified!
+  - type: dropdown
+    id: entity-type
+    attributes:
+      label: Entity Type
+      options:
+        - Concept
+        - Model
+        - Tool
+        - Framework
+        - Architecture
+        - Project
+        - Glossary Term
+    validations:
+      required: true
+  - type: input
+    id: entity-name
+    attributes:
+      label: Entity Name / Slug
+      placeholder: "e.g. DeepSeek-R1 or rag"
+    validations:
+      required: true
+  - type: textarea
+    id: factual-correction
+    attributes:
+      label: Description of Correction or Addition
+      placeholder: Explain the technical detail that needs adjustment.
+    validations:
+      required: true
+  - type: textarea
+    id: verified-source
+    attributes:
+      label: Official Source Link
+      placeholder: Provide a link to the primary research paper or official documentation.
+    validations:
+      required: true

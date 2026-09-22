@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="orbit-grad-1" x1="10" y1="10" x2="90" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="50%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+    <linearGradient id="orbit-grad-2" x1="90" y1="20" x2="10" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+    <radialGradient id="core-glow" cx="50" cy="50" r="24" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#06B6D4" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0" />
+    </radialGradient>
+    <filter id="mark-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Outer Orbital Ring -->
+  <circle cx="50" cy="50" r="42" stroke="#1E293B" stroke-width="2" stroke-dasharray="4 6" opacity="0.6" />
+
+  <!-- Orbital Ellipse 1 (60 deg tilt) -->
+  <ellipse cx="50" cy="50" rx="40" ry="16" transform="rotate(-30 50 50)" stroke="url(#orbit-grad-1)" stroke-width="3" fill="none" stroke-linecap="round" />
+
+  <!-- Orbital Ellipse 2 (reverse tilt) -->
+  <ellipse cx="50" cy="50" rx="40" ry="16" transform="rotate(35 50 50)" stroke="url(#orbit-grad-2)" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.85" />
+
+  <!-- Knowledge Core Glow -->
+  <circle cx="50" cy="50" r="22" fill="url(#core-glow)" />
+
+  <!-- Hexagonal Knowledge Core -->
+  <polygon points="50,34 64,42 64,58 50,66 36,58 36,42" fill="#0F172A" stroke="#06B6D4" stroke-width="2.5" />
+
+  <!-- Inner Triquetra / Synthesis Node -->
+  <circle cx="50" cy="50" r="6" fill="#38BDF8" filter="url(#mark-glow)" />
+  <line x1="50" y1="44" x2="50" y2="34" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" />
+  <line x1="45" y1="53" x2="36" y2="58" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" />
+  <line x1="55" y1="53" x2="64" y2="58" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Orbital Satellite Nodes -->
+  <circle cx="85" cy="30" r="3.5" fill="#10B981" filter="url(#mark-glow)" />
+  <circle cx="15" cy="70" r="3" fill="#06B6D4" filter="url(#mark-glow)" />
+  <circle cx="20" cy="32" r="2.5" fill="#38BDF8" />
+  <circle cx="78" cy="68" r="2.5" fill="#3B82F6" />
+</svg>

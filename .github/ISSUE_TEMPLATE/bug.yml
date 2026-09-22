@@ -1,0 +1,29 @@
+name: Bug Report
+description: Report a broken link, visual regression, or software error.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Aivora!
+  - type: input
+    id: url
+    attributes:
+      label: Affected Page URL / Route
+      placeholder: "/map or /stack"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      placeholder: What went wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: "1. Go to '/stack'\n2. Select 'Local'\n3. Observe..."
+    validations:
+      required: true
