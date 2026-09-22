@@ -96,7 +96,7 @@ export const Navigation: React.FC = () => {
           <div className="flex items-center gap-6">
             <Link href="/" className="flex items-center gap-3 group">
               <div className="w-8 h-8 rounded-lg bg-surface border border-border flex items-center justify-center shadow-glow group-hover:border-primary/60 transition-colors">
-                <img src="/brand/aivora-mark.svg" alt="Aivora Mark" className="w-6 h-6" />
+                <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/brand/aivora-mark.svg`} alt="Aivora Mark" className="w-6 h-6" />
               </div>
               <div className="flex flex-col">
                 <span className="font-display font-extrabold text-lg tracking-wider text-foreground group-hover:text-primary transition-colors">

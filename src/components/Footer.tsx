@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
           {/* Col 1: Brand Info */}
           <div className="md:col-span-2 space-y-4">
             <Link href="/" className="flex items-center gap-3">
-              <img src="/brand/aivora-mark.svg" alt="Aivora Mark" className="w-7 h-7" />
+              <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/brand/aivora-mark.svg`} alt="Aivora Mark" className="w-7 h-7" />
               <span className="font-display font-black text-lg tracking-wider text-foreground">
                 AIVORA
               </span>

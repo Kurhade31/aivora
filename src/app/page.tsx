@@ -121,7 +121,7 @@ export default function HomePage() {
         {/* Subtle background orbital grid */}
         <div
           className="absolute inset-0 opacity-40 pointer-events-none"
-          style={{ backgroundImage: 'url(/patterns/orbit-grid.svg)', backgroundRepeat: 'repeat' }}
+          style={{ backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH || ''}/patterns/orbit-grid.svg)`, backgroundRepeat: 'repeat' }}
         />
 
         {/* Ambient Orbital Glow */}
